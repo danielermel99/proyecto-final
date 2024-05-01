@@ -135,7 +135,6 @@ font-weight: 700;
 
 .preguntasFrecuentes p{
     background-color: rgb(247, 238, 238);
-    margin-bottom: 1.125rem;
     font-family: "Figtree", sans-serif;
     font-weight: 200;
 }
@@ -160,8 +159,6 @@ h4{
 }
 
 .preguntasTrivia  label {
-    display: flex;
-    flex-direction: row;
     text-transform: capitalize;
     color: black;
     font-size: 16px;
@@ -237,6 +234,9 @@ h4{
 }
 
 @media(max-width:425px){
+    .header{
+        position: inherit;
+    }
     .barraNavegacion{
         flex-direction: column;
         padding-right: none; 
@@ -245,4 +245,9 @@ h4{
        .barraNavegacion li a {
         font-size: 20px;
        }
+       .preguntasTrivia label{
+        display: flex;
+        flex-direction: row;
+       }
+       
 }
