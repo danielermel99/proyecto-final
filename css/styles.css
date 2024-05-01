@@ -29,17 +29,19 @@ header h1{
     font-family: "Figtree", sans-serif;
 }
 
+
 .tituloSecundario{
-    margin-top: 16px;
-    text-transform: capitalize;
-    text-align: center;}
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+    font-family: "Figtree", sans-serif;
+}
+
 
 .barraNavegacion{
     text-transform: uppercase;
     text-align: center;
-    margin-top: 16px;
-
-
     color: red;
     font-family: "Figtree", sans-serif;
 }
