@@ -1,0 +1,248 @@
+* {padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+main{
+    background-color: rgb(247, 238, 238);
+}
+
+.fixed a{
+position: fixed;
+right: 20px;
+bottom: 20px;
+}
+header h1{
+    background-color: rgb(42, 42, 213);
+    color: white;
+    text-align: left;
+    text-transform: capitalize;
+    font-family: "Figtree", sans-serif;
+}
+
+.tituloSecundario{
+    text-transform: capitalize;
+    color: red;
+    font-family: "Figtree", sans-serif;
+}
+
+.barraNavegacion{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(247, 238, 238);
+    color: red;
+    text-transform: uppercase;
+    list-style: none;
+    font-family: "Figtree", sans-serif;
+}
+
+
+.barraNavegacion li a{
+color:red;
+    text-decoration: none
+}
+
+
+.info{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: lightblue;
+    font-size: 1.25rem;
+    font-family: "Figtree", sans-serif;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+.infoContacto{
+    justify-content: right;
+}
+
+.adelantoTurnos{   
+  justify-content: left;
+}
+
+
+
+
+.adelantoTurno{
+    background-color: lightblue;
+    font-size: 1.5625rem;
+    font-family: "Figtree", sans-serif;
+    border: 2rem 2rem;
+}
+
+.imagenesAdelanto{
+    background-image: url"../assets/img/adelanto.jpeg"; /* ver el tema de la imagen*/
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "img1 img1 img2 img2 img3 img3 "
+    "img1 img1 img2 img2 img3 img3 "
+    "img1 img1 img2 img2 img3 img3 ";
+    width: 100%;
+    height: 500px;
+    gap: 1rem;
+}
+
+.imagenesAdelanto img{
+    width: 100%;
+}
+.img1{
+    height: 500px;
+    grid-area: img1;
+    object-fit: contain;
+    }
+
+
+.img2{
+    height: 500px;
+    grid-area: img2;
+    object-fit: contain;
+}
+
+.img3{
+    grid-area: img3;
+}
+
+
+
+
+.datosContacto{
+    background-color: rgb(42, 42, 213);
+    color: white;
+    font-family: "Figtree", sans-serif;
+}
+
+.preguntasFrecuentes h3{
+background-color: lightblue;
+margin-bottom: 20px;
+margin-top: 1.875rem;
+font-family: "Figtree", sans-serif;
+font-weight: 700;
+}
+
+.preguntasFrecuentes p{
+    background-color: rgb(247, 238, 238);
+    margin-bottom: 1.125rem;
+    font-family: "Figtree", sans-serif;
+    font-weight: 200;
+}
+
+.infoTrivia{
+    font-size: 24px;
+    text-transform: none;
+    color: black;
+}
+
+.preguntasTrivia {
+    color:rgb(32, 32, 120);
+    text-transform: uppercase;
+    font-family: "Figtree", sans-serif;
+    margin: 20px;
+    font-size: 20px;
+
+}
+h4{
+    color: red;
+    text-transform: capitalize;
+}
+
+.preguntasTrivia  label {
+    display: flex;
+    flex-direction: row;
+    text-transform: capitalize;
+    color: black;
+    font-size: 16px;
+}
+
+.enviar{
+    border-color: rgba(255, 0, 0, 0.749);
+    background-color:rgba(255, 0, 0, 0.749) ;
+    text-transform: uppercase;
+    border-width: 20px;
+    border-radius: 16px;
+    margin-top: 20px;
+    
+}
+.preguntasTrivia p{
+    margin-top: 16px;
+    margin-bottom: 1rem;
+}
+
+
+.indexPrincipal h2{
+    text-align: center;
+    text-decoration:underline;
+    text-transform: uppercase;
+    color: red;
+}
+
+.indexPrincipal{
+    width: 100%;
+    height: 500px;
+    background-color: lightcyan;
+    background-image: url("../assets/img/bandera.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 40% 40%;
+   margin-bottom: 13.75rem;
+   margin-top: 1rem;
+}
+
+.indexPrincipal h3{
+    text-align: center;
+}
+
+.indexPrincipal p{
+    margin-top: 1.875rem;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+
+.pasosSeguir{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: "Figtree", sans-serif;
+}
+
+
+
+@media (max-width:1024px) {
+   header h1{
+    text-align: center;
+    background-position: center;
+    font-size: 2.5rem;
+
+    }
+}
+
+@media (max-width: 768px){
+    .barraNavegacion li a { 
+    background-color: red;
+    color: white;
+}
+}
+
+@media(max-width:425px){
+    .barraNavegacion{
+        flex-direction: column;
+        padding-right: none; 
+        align-items: center;
+       }
+       .barraNavegacion li a {
+        font-size: 20px;
+       }
+}
