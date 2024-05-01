@@ -30,7 +30,9 @@ header h1{
 }
 
 .tituloSecundario{
+    margin-top: 16px;
     text-transform: capitalize;
+    text-align: center;
     color: red;
     font-family: "Figtree", sans-serif;
 }
