@@ -15,6 +15,7 @@ header{
 }
 
 main{
+    font-family: "Figtree", sans-serif;
     background-color: rgb(247, 238, 238);
 }
 
@@ -74,12 +75,13 @@ header h1{
     text-transform: uppercase;
     list-style: none;
     font-family: "Figtree", sans-serif;
+    margin-bottom: 16px;
 }
 
 
 .barraNavegacion li a{
 color:red;
-    text-decoration: none
+    text-decoration: none;
 }
 
 
@@ -151,6 +153,9 @@ color:red;
 
 
 .datosContacto{
+    display: flex;
+    justify-content: space-around;
+    
     background-color: rgb(42, 42, 213);
     color: white;
     font-family: "Figtree", sans-serif;
@@ -210,35 +215,76 @@ h4{
 }
 
 
-.indexPrincipal h2{
+.tituloIndex h2{
+    
     text-align: center;
     text-decoration:underline;
     text-transform: uppercase;
     color: red;
 }
 
-.indexPrincipal{
-    width: 100%;
-    height: 500px;
-    background-color: lightcyan;
-    background-image: url("../assets/img/bandera.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 40% 40%;
-   margin-bottom: 13.75rem;
-   margin-top: 1rem;
+.tituloIndex h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
 }
 
-.indexPrincipal h3{
-    text-align: center;
+.indexPrincipal{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(247, 238, 238);
+    gap: 20px;
 }
+
+
+.indexPrincipal img{
+    width: 100%;
+    border-radius: 35px;
+    border-style: double;
+    border-width: 10px;
+    border-color: blue;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    
+}
+
 
 .indexPrincipal p{
-    margin-top: 1.875rem;
-    padding: 30px 30px;
+    background-color:rgba(10, 15, 168, 0.664);
     text-align: center;
+    border-style: double;
+    border-color: blue;
+    border-radius: 35px;
+    font-size: 24px;
+    grid-column: 3/7;
+    grid-row: 1/2;
 }
 
+.indexPrincipal .infoIndex{
+    grid-column: 1/7;
+    grid-row: 2/3;
+}
+
+.indexPrincipal .infoIndex p{
+    background-color: rgb(241, 84, 84);
+    border-radius: 40px;
+}
+
+.indexPrincipal .infoIndex h3{
+    margin-top: 16px;
+    color: blue;
+    text-align: center;
+    
+}
+
+.indexPrincipal .formaTrabajar li{
+    font-size: 20px;
+    margin: 30px;
+}
 
 .pasosSeguir{
     width: 100%;
