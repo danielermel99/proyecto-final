@@ -1,3 +1,70 @@
+$color-principal:red;
+
+
+
+$color:(
+    color1:blue,
+
+);
+
+$fuentes:(
+    
+
+);
+
+* {padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
 header{
     background-color: rgb(42, 42, 213);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    font-family: "Figtree", sans-serif;
+    .titulo{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+     }
+    img{
+        width: 100px;
+        border-radius: 40px;
+    }
+    h1{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+    h2{
+        color: white;
+        text-align: center;
+        text-transform: capitalize;
+ }
+
+}
+
+
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(247, 238, 238);
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+    list-style: none;
+    margin-bottom: 16px;
+    li{
+        a{
+            text-decoration: none;
+            color: $color-principal; 
+        }
+    }
+
 }
