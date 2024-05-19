@@ -1,0 +1,33 @@
+@media(max-width:425px){
+    header{
+        position: initial;
+    }
+
+    .indexPrincipal{
+        display: flex;
+        flex-direction: column
+    }
+
+
+
+    .barraNavegacion{
+        flex-direction: column;
+        padding-right: none; 
+        align-items: center;
+       }
+       .barraNavegacion li a {
+        font-size: 20px;
+       }
+       .preguntasTrivia label{
+        display: flex;
+        flex-direction: row;
+       }
+
+       .datosContacto{
+        
+        flex-direction: column;
+        padding-right: none; 
+        align-items: left;
+       }
+       
+}
