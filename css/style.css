@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 header {
-  background-color: #2a2ad5;
+  background-image: linear-gradient(to right, #f70808, #ff584a, #ff877f, #fcb2af, #ebdbdb);
   width: 100%;
   position: sticky;
   top: 0;
@@ -56,13 +56,6 @@ main {
   .navBar li:hover {
     color: blue; }
 
-.tituloSecundario {
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 10px;
-  color: red;
-  font-family: "Figtree", sans-serif; }
-
 .datosContacto {
   display: flex;
   flex-direction: row;
@@ -72,6 +65,41 @@ main {
   background-color: #2a2ad5;
   color: white;
   font-family: "Figtree", sans-serif; }
+
+.tracking-in-expand-fwd {
+  -webkit-animation: tracking-in-expand-fwd 1000ms ease-in-out 100ms both;
+  animation: tracking-in-expand-fwd 1000ms ease-in-out 100ms both;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+  color: red;
+  font-family: "Figtree", sans-serif; }
+
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
 
 .info {
   display: flex;
@@ -108,7 +136,8 @@ main {
   grid-template-areas: "img2 img2 img3 img3 img4 img4 img5 img5 img6 img6" "img2 img2 img3 img3 img4 img4 img5 img5 img6 img6" "img2 img2 img3 img3 img4 img4 img5 img5 img6 img6";
   width: 100%;
   height: 500px;
-  gap: 1rem; }
+  gap: 1rem;
+  overflow: hidden; }
 
 .img-adelanto img {
   width: auto;
@@ -117,7 +146,11 @@ main {
 .img2, .img3, .img4, .img5, .img6 {
   height: 500px;
   grid-area: img2;
-  object-fit: contain; }
+  object-fit: cover; }
+
+.img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover {
+  transform: scale(1.3);
+  transition: transform 500ms linear 1s; }
 
 .img3 {
   grid-area: img3; }
@@ -270,6 +303,8 @@ h4 {
     text-align: center;
     font-size: 20px;
     background-color: #e33636; }
+  .pasosSeguir .infoContacto {
+    transform: translate(1000px); }
 
 .clientes {
   margin-top: 110px; }

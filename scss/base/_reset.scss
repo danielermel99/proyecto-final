@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 header{
-    background-color: rgb(42, 42, 213);
+    background-image: linear-gradient(to right, #f70808, #ff584a, #ff877f, #fcb2af, #ebdbdb);
     width: 100%;
     position: sticky;
     top: 0;
@@ -31,6 +31,7 @@ header{
         text-transform: capitalize;
  }
      }
+     
 
 main{
     font-family: "Figtree", sans-serif;
@@ -60,16 +61,53 @@ main{
             }
         }
     }
-    .tituloSecundario{
-        text-transform: uppercase;
-        text-align: center;
-        margin-top: 10px;
-        color: red;
-        font-family: "Figtree", sans-serif;
-    }
     .datosContacto{
         @include flex(row,space-around,center,20px);
          background-color: rgb(42, 42, 213);
         color: white;
         font-family: "Figtree", sans-serif;
     }
+
+    .tracking-in-expand-fwd {
+        -webkit-animation: tracking-in-expand-fwd 1000ms ease-in-out 100ms both;
+         animation: tracking-in-expand-fwd 1000ms ease-in-out 100ms both;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 10px;
+        color: red; 
+        font-family: "Figtree", sans-serif;          
+    }
+
+ @-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
