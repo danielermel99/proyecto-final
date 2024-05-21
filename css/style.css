@@ -178,6 +178,9 @@ main {
     font-size: 20px;
     margin: 30px; }
 
+.main-index {
+  margin-bottom: 20px; }
+
 .tituloIndex h2 {
   text-align: center;
   text-decoration: underline;
@@ -265,7 +268,7 @@ h4 {
     font-size: 16px; }
   .preguntasTrivia p {
     margin-top: 16px;
-    margin-bottom: 1rem; }
+    margin-bottom: 16px; }
 
 .enviar {
   border-color: rgba(255, 0, 0, 0.749);
@@ -334,7 +337,9 @@ h4 {
   .navBar li a {
     background-color: red;
     color: white;
-    gap: 20px; } }
+    gap: 20px; }
+  .main-index {
+    margin-bottom: 250px; } }
 
 @media (max-width: 425px) {
   header {
@@ -342,6 +347,8 @@ h4 {
   .indexPrincipal {
     display: flex;
     flex-direction: column; }
+  .main-index {
+    margin-bottom: 450px; }
   .barraNavegacion {
     flex-direction: column;
     padding-right: none;
