@@ -21,12 +21,12 @@ header{
         border-radius: 40px;
     }
     h1{
-    color: white;
+    color: map-get($color , color1 );
     text-align: center;
     text-transform: capitalize;
 }
     h2{
-        color: white;
+        color:map-get($color , color1 );
         text-align: center;
         text-transform: capitalize;
  }
@@ -46,7 +46,7 @@ main{
     .navBar{
         @include flex(row,space-around,center,none);
         background-color: rgb(247, 238, 238);
-        color: red;
+        color: $color-principal;
         text-transform: uppercase;
         text-align: center;
         list-style: none;
@@ -57,14 +57,14 @@ main{
                 color: $color-principal; 
             }
             &:hover{
-                color: blue; 
+                color: $color-secundario; 
             }
         }
     }
     .datosContacto{
         @include flex(row,space-around,center,20px);
          background-color: rgb(42, 42, 213);
-        color: white;
+        color: map-get($color , color1 );
         font-family: "Figtree", sans-serif;
     }
 
@@ -74,7 +74,7 @@ main{
         text-transform: uppercase;
         text-align: center;
         margin-top: 10px;
-        color: red; 
+        color: $color-principal; 
         font-family: "Figtree", sans-serif;          
     }
 
