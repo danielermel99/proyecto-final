@@ -68,6 +68,11 @@ main{
         font-family: "Figtree", sans-serif;
     }
 
+nav #toogle, nav label{
+  display: none;
+}
+
+
     .tracking-in-expand-fwd {
         -webkit-animation: tracking-in-expand-fwd 1000ms ease-in-out 100ms both;
          animation: tracking-in-expand-fwd 1000ms ease-in-out 100ms both;
