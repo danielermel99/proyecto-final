@@ -9,6 +9,7 @@
 header{
     background-image: linear-gradient(to right, #f70808, #ff584a, #ff877f, #fcb2af, #ebdbdb);
     width: 100%;
+    font-size: map-get($fuentes , l );
     position: sticky;
     top: 0;
     font-family: "Figtree", sans-serif;
@@ -23,7 +24,7 @@ header{
     h1{
     color: map-get($color , color1 );
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
     h2{
         color:map-get($color , color1 );
@@ -74,6 +75,7 @@ nav #toogle, nav label{
 
 
     .tracking-in-expand-fwd {
+      position: initial;
         -webkit-animation: tracking-in-expand-fwd 1000ms ease-in-out 100ms both;
          animation: tracking-in-expand-fwd 1000ms ease-in-out 100ms both;
         text-transform: uppercase;

@@ -1,4 +1,22 @@
 @media (max-width: 768px){
+
+    header h1{
+        background-position: right;
+        font-size: 30px;
+    }
+    header h2{
+        font-size: 20px;
+    }
+    .navBar li a { 
+    background-color: red;
+    color: white;
+    gap: 20px;
+    }
+    .main-index{
+    margin-bottom: 10px;
+    }
+    
+
     nav .menu{
         width: 100%;
         height: 0;
@@ -16,6 +34,7 @@
     nav #toogle:checked ~ .menu{
         height: 100%;
     }
+
 }
 
 
@@ -23,19 +42,4 @@
 
 
 
-    header h1{
-        background-position: right;
-        font-size: 24px;
-    }
-    header h2{
-        font-size: 20px;
-    }
-    .navBar li a { 
-    background-color: red;
-    color: white;
-    gap: 20px;
-}
-.main-index{
-    margin-bottom: 250px;
-}
 
