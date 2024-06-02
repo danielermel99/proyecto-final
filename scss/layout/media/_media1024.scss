@@ -3,7 +3,14 @@
      text-align: right;
      background-position: center;
      font-size: map-get($fuentes , m );
- 
+     }
+     .img-adelanto{
+        width: 100%;
+        height: 1050px;
+        @include flex(row,none,start,20px);
+        flex-wrap:wrap;
+        
+
      }
  }
  
